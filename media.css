@@ -1,0 +1,202 @@
+@media screen and (max-width: 1350px) {
+    .page1 .content .leftContent {
+        margin: 160px 30px 0 3%;
+    }
+    header {
+        padding: 20px 0 20px 3%;
+    }
+    header ul {
+        right: 3%;
+    }
+    .page2 {
+        display: flex;
+        justify-content: center;
+    }
+    .page2 .content {
+        background: #0000002e;
+        padding: 20px;
+        border-radius: 10px;
+        right: auto;
+    }
+    .page2 .content > span {
+        text-shadow: 2px 2px 2px #000;
+        color: #fff;
+    }
+    .page1 .content img {
+        right: 3%;
+    }
+    .page3 .form {
+        left: 3%;
+    }
+    .page3 .form form {
+        background: #f4f4f2b0;
+    }
+    .page3 .fruct {
+        right: 0;
+    }
+    .page4 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+    }
+    .page4 .description {
+        margin-bottom: 20px;
+        position: static;
+    }
+    .page4 .rightImg {
+        position: static;
+    }
+    .page5 {
+        background: url(img/page5_background.png) center / cover no-repeat;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .page1 {
+        height: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .page1 .content {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page1 .content img {
+        position: static;
+    }
+    .page1 .content .leftContent {
+        margin: 160px 0 20px 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 85%;
+    }
+    .page3 .form {
+        left: auto;
+    }
+    .page1 .content .leftContent span {
+        font: 100 1.3em 'Poppins', sans-serif;
+    }
+    .page2 .content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page2 .content > span {
+        font: bold 1.3em 'Poppinssans-serif';
+    }
+    .page4 .description {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page4 .description span {
+        font: 100 22px 'Poppins', sans-serif;
+    }
+    .page5 .content {
+        top: 430px;
+        padding: 0 50px 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header ul {
+        right: auto;
+        position: static;
+        margin-top: 25px;
+    }
+    header ul li {
+        margin-right: 100px;
+    }
+    header ul li:last-child {
+        margin-right: 0;
+    }
+    .page1 .content .leftContent {
+        margin: 175px 0 20px 0;
+    }
+    .page4 .rightImg {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .page1 .content img {
+        width: 500px;
+        height: 500px;
+    }
+    .page5 .content {
+        padding: 0 20px 20px;
+    }
+}
+@media screen and (max-width: 565px) {
+    .page3 .form {
+        width: 400px;
+    }
+    .page3 .form form {
+        width: 400px;
+        padding: 65px 0px 57px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .page4 .rightImg {
+        width: 400px;
+        height: 300px;
+    }
+    .page2 .content {
+        width: 400px;
+    }
+    .page1 .content img {
+        width: 400px;
+        height: 400px;
+    }
+    .page1 .content .leftContent h1 {
+        font-size: 3em;
+    }
+    .page1 .content .leftContent h2 {
+        font: 100 2.2em 'Righteous', cursive;
+    }
+    .burgerMenu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
+@media screen and (max-width: 430px) {
+    .page3 .form {
+        width: 300px;
+    }
+    .page3 .form form {
+        width: 300px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .page4 .rightImg {
+        width: 300px;
+        height: 250px;
+    }
+    .page1 .content img {
+        width: 300px;
+        height: 350px;
+    }
+    .page2 .content {
+        width: 330px;
+    }
+    .page4 .description h1 {
+        font: 1.8em 'Righteous', cursive;
+    }
+    .page4 .description span {
+        font: 100 20px 'Poppins', sans-serif;
+    }
+}
+

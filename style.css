@@ -1,0 +1,432 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; overflow-x: hidden; background-color: gray;}
+
+header {
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0 20px 10%;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+}
+header .logo {
+    display: inline;
+    transition: 0.3s;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+}
+header ul li {
+    list-style: none;
+    margin-right: 52px;
+}
+header ul li a {
+    font: 18px sans-serif;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* PAGE1 */
+.page1 {
+    width: 100%;
+    height: 800px;
+    background: url(img/page1_back.jpg) center / cover;
+    position: relative;
+}
+.page1 > .transparentImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+}
+/* CONTENT */
+.page1 .content {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+.page1 .content .leftContent {
+    width: 555px;
+    padding-right: 50px;
+    line-height: 25px;
+    margin: 160px 30px 0 10%;
+    z-index: 1;
+}
+.page1 .content .leftContent h1 {
+    color: #fff;
+    font-size: 4em;
+    font-family: 'Righteous', cursive;
+}
+.page1 .content .leftContent h2 {
+    color: #fff;
+    font: 100 2.7em 'Righteous', cursive;
+    margin-bottom: 40px;
+    margin-top: 35px;
+}
+.page1 .content .leftContent span {
+    color: #fff;
+    font: 100 1em 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 50px;
+}
+.page1 .content .leftContent .button {
+    width: 250px;
+    height: 66px;
+    background-color: #fff;
+    color: #f57615;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+}
+.page1 .content img {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    right: 10%;
+    z-index: 1;
+}
+/* PAGE 2 */
+.page2 {
+    width: 100%;
+    height: 860px;
+    background: url(img/page2_back.jpg) center / cover no-repeat;
+    position: relative;
+}
+.page2 .content {
+    position: absolute;
+    right: 3%;
+    top: 300px;
+    width: 480px;
+}
+.page2 .content h1 {
+    color: #000;
+    font: 100 2.5em 'Righteous', cursive;
+    margin-bottom: 50px;
+}
+.page2 .content h1 > span {
+    color: #f99b1d;
+}
+.page2 .content > span {
+    font: bold 1em 'Poppins', sans-serif;
+}
+.page2 .content .button {
+    width: 220px;
+    height: 65px;
+    background-color: #f67914;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.page2 .content .button span {
+    font: bold 18px 'Poppins', sans-serif;
+    color: #fff;
+    user-select: none;
+}
+/* PAGE 3 */
+.page3 {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+.page3 .form {
+    width: 565px;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    text-align: center;
+    background-color: #000;
+    z-index: 1;
+}
+.page3 .form h1 {
+    color: #000;
+    font: 100 2.5em 'Righteous', cursive;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+}
+.page3 .form form {
+    border-radius: 40px;
+    width: 565px;
+    position: absolute;
+    background: #f4f4f2;
+    padding: 65px 52px 57px;
+}
+.page3 .form form input {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-bottom: 28px;
+    text-indent: 21px;
+    font: 20px open-sans;
+}
+.page3 .form form .textArea {
+    width: 80%;
+    min-height: 145px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 55px 20px 10px;
+    font: 20px open-sans;
+}
+.page3 .form form button {
+    width: 170px;
+    height: 58px;
+    background-color: #f67914;
+    border: none;
+    outline: none;
+    margin-top: 58px;
+    color: #fff;
+    font: bold 20px 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.page3 .fruct {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 180px;
+    right: 1%;
+    object-fit: contain;
+    z-index: 0;
+}
+/* PAGE 4 */
+.page4 {
+    width: 100%;
+    height: 845px;
+    background: url(img/page4Back.jpg) center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page4 .description {
+    width: 575px;
+    min-height: 420px;
+    position: absolute;
+    left: 3%;
+}
+.page4 .description h1 {
+    color: #fff;
+    font: 2.2em 'Righteous', cursive;
+    margin-bottom: 60px;
+}
+.page4 .description span {
+    color: #fff;
+    font: 100 20px 'Poppins', sans-serif;
+    margin: 0 20px;
+}
+.page4 .description button {
+    width: 225px;
+    height: 65px;
+    background-color: #fff;
+    color: #000;
+    font: bold 20px 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 80px;
+    display: block;
+}
+.page4 .rightImg {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    right: 3%;
+}
+/* PAGE 5 */
+.page5 {
+    width: 100%;
+    min-height: 930px;
+    background: url(img/page5_background.png) 50% 20% / 130% 130% no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.page5 .topPanel {
+    width: 100%;
+    margin-top: 115px;
+    text-align: center;
+}
+.page5 .topPanel h1 {
+    color: #000;
+    font: 2.5em 'Righteous', cursive;
+    margin-bottom: 25px;
+}
+.page5 .topPanel h2 {
+    color: #000;
+    font: bold 20px 'Poppins', sans-serif;
+    margin: 0 20px;
+}
+.page5 .content {
+    width: 85%;
+    min-height: 500px;
+    top: 370px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 100px 20px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.page5 .content .face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -100px;
+}
+.page5 .content .face .faceImg {
+    position: absolute;
+}
+.page5 .content .name h1 {
+    border-bottom: 1px solid #4a1667;
+    display: inline-block;
+    margin-top: 45px;
+    padding: 0 30px;
+    margin-bottom: 35px;
+}
+.page5 .content .description {
+    font: bold 18px 'Poppins', sans-serif;
+}
+/* FOOTER */
+footer {
+    min-height: 310px;
+    background-color: #2b2b2b;
+    padding-top: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .title {
+    margin-bottom: 30px;
+    color: #fff;
+    font: 100 2.2em 'Righteous', cursive;
+}
+footer .title > span {
+    color: #e9531d;
+}
+footer .description {
+    color: #fff;
+    font: bold 16px 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+footer .hr {
+    background-color: #696969;
+    width: 80%;
+    height: 1px;
+    margin-bottom: 20px;
+}
+footer .copyright {
+    color: #fff;
+    font: bold 16px 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+/* BURGER MENU */
+aside.burger {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 15;
+    transition: .8s;
+}
+aside.burger .sideBar {
+    list-style: none;
+    text-align: center;
+}
+aside.burger .sideBar li {
+    border-bottom: 2px solid orange;
+}
+aside.burger .sideBar li a {
+    display: block;
+    padding: 20px 0;
+    color: #fff;
+    font: 100 2em 'Righteous', cursive;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000;
+    position: relative;
+}
+aside.burger .sideBar li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: orange;
+    z-index: -1;
+    clip-path: circle(3% at 7%);
+    transition: 0.5s;
+}
+aside.burger .sideBar li a:hover::after {
+    clip-path: circle(100%);
+}
+.burgerMenu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+    height: 40px;
+    display: none;
+    z-index: 15;
+}
+.burgerMenu > div {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 1px #000;
+}
+.burgerMenu > div:nth-of-type(2), .burgerMenu > div:nth-of-type(3) {
+    margin-top: 10px;
+}
+.burger .sideBar li a img {
+    -webkit-backdrop-filter: drop-shadow(2px 2px 2px #000);
+}
+.burger.active {
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
